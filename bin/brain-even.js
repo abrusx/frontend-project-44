@@ -1,11 +1,9 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync'
 import welcome from '../src/cli.js'
+import { final, getRandomInt } from '../src/index.js'
 
-const game = () => {
-  function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
-  }
+const gameEven = () => {
   let gameResult
   console.log('Answer "yes" if the number is even, otherwise answer "no".')
 
@@ -14,7 +12,7 @@ const game = () => {
     const trueAnswer = (number % 2) === 0 ? 'yes' : 'no'
 
     console.log(`Question: ${number}`)
-    const answer = readlineSync.question('Your answer: ');
+    const answer = readlineSync.question('Your answer: ')
 
     if (answer === trueAnswer) {
       console.log('Correct!')
@@ -29,16 +27,8 @@ const game = () => {
   return gameResult
 }
 
-const final = (result) => {
-  if (result) {
-    console.log(`Congratulations, ${name}!`)
-  } else {
-    console.log(`Let's try again, ${name}!`)
-  }
-}
-
 // game process
-console.log('Welcome to the Brain Games!');
+console.log('Welcome to the Brain Games!')
 const name = welcome()
-const result = game()
-final(result)
+const result = gameEven()
+final(result, name)
