@@ -7,8 +7,6 @@ const gameCalc = () => {
   let gameResult
   console.log('What is the result of the expression?')
 
-  getRandomFromRange(1, 33)
-
   for (let i = 0; i < 3; i++) {
     const operandFirst = getRandomFromRange(1, 30)
     const operandSecond = getRandomFromRange(1, 20)

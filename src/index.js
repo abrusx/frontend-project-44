@@ -34,3 +34,11 @@ export function getRandomMathOperator() {
 
   return result
 }
+
+export function getGCD(a, b) {
+    if (b === 0) {
+    return Math.abs(a);
+  }
+
+  return getGCD(b, a % b)
+}
