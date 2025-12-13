@@ -3,4 +3,5 @@
 
 [![ASCIINEMA EVEN](https://img.shields.io/badge/asciinema-even-blue?logo=asciinema&style=for-the-badge)](https://asciinema.org/a/KlXUb5uZfpZ9zwVTi0oKeByWK)
 [![ASCIINEMA CALC](https://img.shields.io/badge/asciinema-calc-blue?logo=asciinema&style=for-the-badge)](https://asciinema.org/a/gV1Hyu2g7fQWrhgu9uo17dkti)
+[![ASCIINEMA GCD](https://img.shields.io/badge/asciinema-GCD-blue?logo=asciinema&style=for-the-badge)](https://asciinema.org/a/W7TQVzgAJOdF8IGicCVtwC3mU)
 
