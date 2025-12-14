@@ -42,3 +42,17 @@ export function getGCD(a, b) {
 
   return getGCD(b, a % b)
 }
+
+export function getProgression() {
+  const resultArray = []
+  const amountRandom = getRandomFromRange(8, 12)
+  const stepRandom = getRandomFromRange(2, 6)
+  let index = 0
+
+  for (let i = 0; i < amountRandom; i++) {
+    index = index + stepRandom
+    resultArray.push(index)
+  }
+
+  return resultArray
+}

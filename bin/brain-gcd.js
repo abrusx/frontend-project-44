@@ -5,7 +5,6 @@ import { final, getRandomFromRange, getGCD } from '../src/index.js'
 
 const gameGCD = () => {
   let gameResult
-  console.log('What is the result of the expression?')
 
   for (let i = 0; i < 3; i++) {
     const operandFirst = getRandomFromRange(1, 100)
@@ -24,11 +23,13 @@ const gameGCD = () => {
       break
     }
   }
+  
   return gameResult
 }
 
 // // game process
-console.log('Find the greatest common divisor of given numbers.')
+console.log('Welcome to the Brain Games!')
 const name = welcome()
+console.log('Find the greatest common divisor of given numbers.')
 const result = gameGCD()
 final(result, name)

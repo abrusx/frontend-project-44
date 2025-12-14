@@ -5,7 +5,6 @@ import { final, getRandomFromRange, getRandomMathOperator } from '../src/index.j
 
 const gameCalc = () => {
   let gameResult
-  console.log('What is the result of the expression?')
 
   for (let i = 0; i < 3; i++) {
     const operandFirst = getRandomFromRange(1, 30)
@@ -39,11 +38,13 @@ const gameCalc = () => {
       break
     }
   }
+  
   return gameResult
 }
 
 // game process
 console.log('Welcome to the Brain Games!')
 const name = welcome()
+console.log('What is the result of the expression?')
 const result = gameCalc()
 final(result, name)

@@ -5,7 +5,6 @@ import { final, getRandomInt } from '../src/index.js'
 
 const gameEven = () => {
   let gameResult
-  console.log('Answer "yes" if the number is even, otherwise answer "no".')
 
   for (let i = 0; i < 3; i++) {
     const number = getRandomInt(100)
@@ -23,12 +22,13 @@ const gameEven = () => {
       break
     }
   }
-
+  
   return gameResult
 }
 
 // game process
 console.log('Welcome to the Brain Games!')
 const name = welcome()
+console.log('Answer "yes" if the number is even, otherwise answer "no".')
 const result = gameEven()
 final(result, name)
