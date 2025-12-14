@@ -32,7 +32,7 @@ const gameCalc = () => {
     if (answerUser === answerTrue) {
       console.log('Correct!')
       gameResult = true
-    } 
+    }
     else {
       console.log(`'${answerUser}' is wrong answer ;(. Correct answer was '${answerTrue}'.`)
       gameResult = false
