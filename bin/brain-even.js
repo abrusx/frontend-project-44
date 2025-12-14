@@ -16,13 +16,13 @@ const gameEven = () => {
     if (answer === trueAnswer) {
       console.log('Correct!')
       gameResult = true
-    } else {
+    } 
+    else {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${trueAnswer}'.`)
       gameResult = false
       break
     }
   }
-  
   return gameResult
 }
 

@@ -19,13 +19,13 @@ const gameProgression = () => {
     if (answerUser === hiddenAmount) {
       console.log('Correct!')
       gameResult = true
-    } else {
+    } 
+    else {
       console.log(`'${answerUser}' is wrong answer ;(. Correct answer was '${hiddenAmount}'.`)
       gameResult = false
       break
     }
   }
-  
   return gameResult
 }
 

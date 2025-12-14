@@ -1,17 +1,18 @@
 export const final = (result, name) => {
   if (result) {
     console.log(`Congratulations, ${name}!`)
-  } else {
+  }
+  else {
     console.log(`Let's try again, ${name}!`)
   }
 }
 
 export function getRandomInt(max) {
-    return Math.floor(Math.random() * max)
-  }
+  return Math.floor(Math.random() * max)
+}
 
 export function getRandomFromRange(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+  return Math.floor(Math.random() * (max - min + 1)) + min
 }
 
 export function getRandomMathOperator() {
@@ -36,10 +37,9 @@ export function getRandomMathOperator() {
 }
 
 export function getGCD(a, b) {
-    if (b === 0) {
-    return Math.abs(a);
+  if (b === 0) {
+    return Math.abs(a)
   }
-
   return getGCD(b, a % b)
 }
 

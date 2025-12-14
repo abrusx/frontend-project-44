@@ -16,13 +16,13 @@ const gameProgression = () => {
     if (answerUser === answerTrue) {
       console.log('Correct!')
       gameResult = true
-    } else {
+    } 
+    else {
       console.log(`'${answerUser}' is wrong answer ;(. Correct answer was '${answerTrue}'.`)
       gameResult = false
       break
     }
   }
-  
   return gameResult
 }
 
